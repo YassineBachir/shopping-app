@@ -1,0 +1,83 @@
+ [
+    {
+      "id": 1,
+      "imageSrc": "https://cdsassets.apple.com/live/7WUAS350/images/iphone/fall-2023-iphone-colors-iphone-15-pro-max.png",
+      "title": "iPhone 15 Pro",
+      "specification": [
+        "A17 Pro chip with 6-core GPU",
+        "3x or 5x Telephoto camera",
+        "Up to 29 hours video playback"
+      ],
+      "stockCount": 10,
+      "price": 999,
+      "available": true
+    },
+    {
+      "id": 2,
+      "imageSrc": "https://img.freepik.com/psd-gratuit/ecouteurs-sans-fil-blancs-elegants-dans-etui-charge-fond-transparent_84443-25508.jpg?ga=GA1.1.808917822.1735928939&semt=ais_hybrid",
+      "title": "AirPods Pro 2",
+      "specification": [
+        "Noise Cancellation",
+        "Dust, sweat, and water resistant",
+        "Up to 6 hours of listening"
+      ],
+      "stockCount": 0,
+      "price": 249,
+      "available": false
+    },
+    {
+      "id": 3,
+      "imageSrc": "https://www.apple.com/v/apple-watch-series-10/c/images/overview/contrast/product_se__f3k18492qcey_xlarge.png",
+      "title": "Apple Watch 9",
+      "specification": [
+        "45mm or 41mm case size",
+        "Always-On Retina display",
+        "Up to 18 hours normal use"
+      ],
+      "stockCount": 6,
+      "price": 399,
+      "available": false
+      
+    }, 
+    {
+      "id": 4,
+      "imageSrc": "https://i.ebayimg.com/images/g/ifgAAOSwHcxe3a2E/s-l1200.jpg",
+      "title": "MacBook Pro",
+      "specification": [
+        "Apple M1 chip",
+        "16GB RAM",
+        "512GB SSD"
+      ],
+      "stockCount": 5,
+      "price": 1299,
+      "available": true
+    },
+    {
+      "id": 5,
+      "imageSrc": "https://m.media-amazon.com/images/I/71HebNKAheL._AC_UF894,1000_QL80_.jpg",
+      "title": "iPad Pro",
+      "specification": [
+        "Apple M1 chip",
+        "12.9-inch Liquid Retina display",
+        "1TB storage"
+      ],
+      "stockCount": 8,
+      "price": 1099,
+      "available": true
+    },
+    {
+      "id": 6,
+      "imageSrc": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MX3X2?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1570119352355",
+      "title": "Apple TV 4K",
+      "specification": [
+        "A12 Bionic chip",
+        "4K HDR",
+        "64GB storage"
+      ],
+      "stockCount": 12,
+      "price": 179,
+      "available": true
+    }
+  ]
+
+  
