@@ -12,54 +12,13 @@ import ProductItem from './ProductItem';
 
 export default function ProductList({ products }) {
   return (
-    <div className="flex flex-wrap p-4">
-      {products.map((product, index) => (
-        <ProductItem key={index} product={product} />
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+      {products.map((product) => (
+        <ProductItem key={product.id} product={product} />
       ))}
     </div>
   );
 }
 
 
-// import React, { useState } from 'react';
 
-// export default function ProductList({ product }) {
-//   const [isFavorite, setIsFavorite] = useState(false);
-//   const [showSpecs, setShowSpecs] = useState(false);
-
-//   return (
-//     <article className="border rounded-lg shadow-md m-4 p-4 w-64">
-//       <div className="flex justify-end">
-//         <button
-//           className={`text-xl ${isFavorite ? 'text-red-500' : 'text-gray-500'}`}
-//           onClick={() => setIsFavorite(!isFavorite)}
-//         >
-//           {isFavorite ? '❤️' : '🤍'}
-//         </button>
-//       </div>
-//       <h2 className="text-lg font-semibold">{product.name}</h2>
-//       <img src={product.image} alt={product.name} className="w-full h-32 object-cover" />
-      
-//       <button 
-//         onClick={() => setShowSpecs(!showSpecs)} 
-//         className="mt-2 bg-blue-500 text-white py-1 px-2 rounded"
-//       >
-//         {showSpecs ? "Hide" : "Show"} Specifications
-//       </button>
-
-//       {showSpecs && (
-//         <div className="mt-2">
-//           <p>Price: ${product.price}</p>
-//           <p>{product.available > 0 ? `${product.available} items Available` : 'Not available'}</p>
-//         </div>
-//       )}
-
-//       <button 
-//         className={`mt-2 w-full py-1 rounded ${product.available > 0 ? 'bg-green-500' : 'bg-gray-300'} text-white`} 
-//         disabled={product.available === 0}
-//       >
-//         Buy
-//       </button>
-//     </article>
-//   );
-// }

@@ -52,7 +52,7 @@ function ProductItem({ product }) {
   const [showSpecs, setShowSpecs] = useState(false);
 
   return (
-    <article className="border rounded-lg shadow-md m-4 p-4 w-64">
+    <article className="border rounded-lg shadow-md m-4 p-4 w-100">
       <button
         className={`text-xl ${isFavorite ? 'text-red-500' : 'text-gray-500'}`}
         onClick={() => setIsFavorite(!isFavorite)}

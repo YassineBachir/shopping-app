@@ -112,7 +112,7 @@ export default function Item({ product }) {
       <img
         src={product.imageSrc}
         alt={product.title}
-        className="mx-auto w-36 h-36 object-cover" 
+        className="mx-auto w-60 h-42 object-cover" 
       />
       
       <button 

@@ -1,27 +1,21 @@
-
 import './App.css';
-import { ProductItem } from './components/ProductItem';
+import ProductItem from './components/ProductItem'; // Assurez-vous que le chemin est correct
 import ProductList from './components/ProductList';
 import { products } from './data/products';
 
 function App() {
   return (
     <div className='App'>
-    <ProductList>
-      { products.map(product =>(
-        <ProductItem product={product}/>
-      ))}
-    </ProductList>
-    <div className='flex justify-center items-center bg-slate-600'>
-      <div className="flex  justify-between  mt-4 overflow-none  ml-20 bg-slate-600 carousel carousel-center ">
-      {products.map((product, index) => (
-        <div key={index} className=" w-1/3 carousel-item">
-          <Item product={product} />
-        </div>
-      ))}
+      <ProductList products={products} /> {/* Passer les produits ici */}
+      
+      <div className="grid grid-cols-3 gap-4 p-4"> {/* Ajout de padding pour espacer la grille */}
+        {products.map((product) => (
+          <div key={product.id} className="w-full"> {/* Utiliser w-full pour occuper toute la largeur */}
+            <ProductItem product={product} /> {/* Utiliser ProductItem ici */}
+          </div>
+        ))}
       </div>
     </div>
-  </div>
   );
 }
 
